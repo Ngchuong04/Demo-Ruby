@@ -1,0 +1,6 @@
+Good news!
+<%= @product.name %> is back in stock.
+<%= product_url(@product) %>
+Unsubscribe: <%= unsubscribe_url(token: params[:subscriber].generate_token_for(:unsubscribe)) %>
+
+<%= @greeting %>, find me in app/views/product_mailer/in_stock.text.erb

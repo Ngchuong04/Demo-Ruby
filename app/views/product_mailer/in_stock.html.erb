@@ -1,0 +1,6 @@
+<h1>Good news!</h1>
+<p><%= link_to @product.name, product_url(@product) %> is back in stock.</p
+<%= link_to "Unsubscribe", unsubscribe_url(token: params[:subscriber].generate_token_for(:unsubscribe)) %>
+<p>
+  <%= @greeting %>, find me in app/views/product_mailer/in_stock.html.erb
+</p>

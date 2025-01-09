@@ -23,6 +23,7 @@
   </head>
 
   <body>
+  <div class="notice"><%= notice %></div>
   <nav>
   <%= link_to "Home", root_path %>
   <%= button_to "Log out", session_path, method: :delete if authenticated? %>
